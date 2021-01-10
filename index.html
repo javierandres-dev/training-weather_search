@@ -3,9 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Weather Search</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+      <span>Built by Javier Andrés.</span><br />
+      <span>
+        Found a bug or have an idea?<a
+          class="nav-link"
+          href="https://github.com/javierandresgp/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contact me</a
+        >.
+      </span>
+    </header>
+    <main role="main">
+      <h1>Weather Search</h1>
+      <section id="results"></section>
+      <form>
+        <label for="countries">Choose a country</label>
+        <select id="countries">
+          <option value="" selected disabled>Select ...</option>
+        </select>
+        <label for="city">Enter city name</label>
+        <input type="search" id="city" value="" placeholder="Example: Bogotá" />
+        <button type="submit">Look for the weather</button>
+      </form>
+    </main>
+    <aside id="info"></aside>
+    <footer>
+      <span>&copy;</span>
+      <a
+        href="https://github.com/javierandresgp/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >&nbsp;I&nbsp;</a
+      >created this page using vanilla JavaScript, for the styles<a
+        href="https://github.com/javierandresgp/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >&nbsp;I&nbsp;</a
+      >used vanilla CSS. &nbsp;It is created using the data available in the
+      REST API's
+      <a
+        href="https://openweathermap.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >OpenWeather</a
+      >
+      using
+      <a
+        href="https://restcountries.eu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >REST Countries</a
+      >.
+    </footer>
   </body>
+  <script src="./js/main.js" type="module"></script>
 </html>

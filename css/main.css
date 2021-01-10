@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  font-style: italic;
+}
+a:hover {
+  text-decoration: underline;
+  color: lightsalmon;
+}
+a:active {
+  text-decoration: underline;
+}
+header {
+  font-size: 14px;
+  text-align: right;
+  padding: 8px;
+  color: gray;
+}
+main {
+  max-width: 420px;
+  margin: auto;
+  padding: 8px;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+section {
+  background-color: #f8f8f8;
+  padding: 16px 0;
+}
+figure {
+  width: 100%;
+  margin: auto;
+  padding-top: 16px;
+  text-align: center;
+  background-color: red;
+  border-radius: 16px 0 16px 0;
+}
+figcaption {
+  background-color: gray;
+  color: azure;
+  border-radius: 0 0 16px 0;
+  margin-top: 16px;
+  padding: 8px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+  font-size: 14px;
+}
+li {
+  padding: 2px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin: 8px 0;
+}
+select,
+input {
+  padding: 8px;
+}
+button {
+  margin-top: 8px;
+  padding: 8px;
+}
+aside {
+  text-align: center;
+}
+footer {
+  padding: 8px;
+  font-size: 12px;
+  color: gray;
+}
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 720px;
+  }
+  form {
+    max-width: 480px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 960;
+  }
+}
+.warning {
+  background-color: yellow;
+  color: black;
+  padding: 16px;
+  border-radius: 32px;
+  font-weight: bold;
+}
