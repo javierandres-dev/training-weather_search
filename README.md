@@ -13,4 +13,4 @@ How does it look? Take a look at [Weather Search](https://javierandresgp.github.
 * [OpenWeather API](https://openweathermap.org/)
 
 ## Software engineer
-[Javier Andrés Garzón Patarroyo](https://www.javierandresgp.com)
+[Javier Andrés GP](https://www.javierandresgp.com)
