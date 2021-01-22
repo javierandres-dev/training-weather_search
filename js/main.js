@@ -1,3 +1,4 @@
+"use strict";
 const d = document,
   $form = d.querySelector("form"),
   $countries = d.getElementById("countries"),
@@ -26,11 +27,11 @@ const showWeather = (data) => {
       $results.removeChild($results.firstChild);
     }
   }
-  const $title = d.createElement("h2"),
+  const $title = d.createElement("h4"),
     $figure = d.createElement("figure"),
     $icon = d.createElement("img"),
     $description = d.createElement("figcaption"),
-    $subtitle = d.createElement("h3"),
+    $subtitle = d.createElement("h4"),
     $temperature = d.createElement("h4"),
     $ul = d.createElement("ul"),
     $human = d.createElement("li"),

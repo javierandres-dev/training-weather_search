@@ -1,6 +1,3 @@
-:root {
-  --lightblue: #05a6f1;
-}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,6 +9,9 @@ html {
 }
 body {
   font-family: sans-serif;
+}
+h4 {
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -30,36 +30,11 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
-.dev {
-  position: sticky;
-  top: 0;
-  background-color: inherit;
-  color: inherit;
-  padding: 1rem;
-}
-.dev h1 {
-  text-align: center;
-}
-.dev p {
-  text-align: right;
-}
-.dev p span {
-  font-size: inherit;
-}
-.dev a:link {
-  color: var(--lightblue);
-}
 main {
   max-width: 420px;
   margin: auto;
   padding: 8px;
   font-size: 16px;
-}
-h1,
-h2,
-h3,
-h4 {
-  text-align: center;
 }
 section {
   background-color: #f8f8f8;
@@ -133,4 +108,47 @@ aside {
   padding: 16px;
   border-radius: 32px;
   font-weight: bold;
+}
+.title {
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+/* JAGP
+  ============================= */
+.jagp {
+  margin: 0;
+  font-family: sans-serif;
+  color: gray;
+}
+.jagp a {
+  color: #05a6f1;
+}
+.jagp a:link {
+  text-decoration: none;
+}
+.jagp a:visited {
+  font-style: italic;
+}
+.jagp a:hover {
+  text-decoration: underline;
+}
+.jagp a:active {
+  font-style: italic;
+  text-decoration: underline;
+  color: gray;
+}
+.jagp h1,
+.jagp h2 {
+  margin: 0;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.jagp h1 {
+  text-align: left;
+}
+.jagp h2 {
+  text-align: right;
 }
