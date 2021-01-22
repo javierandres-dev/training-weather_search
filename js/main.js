@@ -1,15 +1,21 @@
 "use strict";
+// variables
 const d = document,
   $form = d.querySelector("form"),
   $countries = d.getElementById("countries"),
   $city = d.getElementById("city");
+/* listeners */
+// when the document tree already loaded ...
 d.addEventListener("DOMContentLoaded", () => {
   fillCountries();
   eventListeners();
 });
+// event listeners
 const eventListeners = () => {
   $form.addEventListener("submit", searchCity);
 };
+/* functions */
+// request and show the weather according to user selection
 const searchCity = async (e) => {
   e.preventDefault();
   if (validateForm()) {
@@ -20,6 +26,7 @@ const searchCity = async (e) => {
     $form.reset();
   }
 };
+// print results on the user interface
 const showWeather = (data) => {
   const $results = d.getElementById("results");
   if ($results.firstChild) {
@@ -80,12 +87,13 @@ const showWeather = (data) => {
   $ul.appendChild($tempMin);
   $ul.appendChild($tempMax);
   $results.appendChild($ul);
-  //console.log(data);
 };
+// convert Kelvis degrees to Celsius degrees
 const kelvin_to_celsius = (kelvin_degrees) => {
   const kelvin = parseFloat(kelvin_degrees);
   return kelvin - 273.15;
 };
+// make a query API
 async function getWeather(country_code, city_name) {
   try {
     const resp = await fetch(
@@ -98,6 +106,7 @@ async function getWeather(country_code, city_name) {
     showAlert(error, "warning");
   }
 }
+// check form fields
 const validateForm = () => {
   const country = $countries.value,
     city = $city.value;
@@ -111,6 +120,7 @@ const validateForm = () => {
     return true;
   }
 };
+// inform the user about something
 const showAlert = (message, type) => {
   const $info = d.getElementById("info");
   $info.innerHTML = `
@@ -120,6 +130,7 @@ const showAlert = (message, type) => {
     $info.innerHTML = null;
   }, 3000);
 };
+// request and fill options with the elements obtained
 const fillCountries = async () => {
   const countries = await getCountries();
   countries.forEach((country) => {
@@ -129,6 +140,7 @@ const fillCountries = async () => {
     $countries.appendChild($country);
   });
 };
+// make a query API
 async function getCountries() {
   try {
     const resp = await fetch("https://restcountries.eu/rest/v2/all");
