@@ -9,6 +9,7 @@ How does it look? Take a look at [Weather Search](https://javierandresgp.github.
 * HTML
 * CSS
 * JavaScript
+### API
 * [REST Countries API](https://restcountries.eu/)
 * [OpenWeather API](https://openweathermap.org/)
 
